@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="styles.min.css">
+    <title>Weather App</title>
+</head>
+<body class="page">
+    <main class="main page__main">
+        <section class="weather main__weather">
+            <div class="weather__form-box">
+                <form action="#" class="form weather__form">
+                    <div class="form__control">
+                        <input type="text" name="city" class="form__input" placeholder="Search for location">
+                        <button class="form__btn">
+                            <i class="fa fa-search form__search-icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <section class="weather-current weather__weather-current">
+                <header class="weather-current__header">
+                    <h1 class="weather-current__title weather__current-city">
+                        Warsaw
+                    </h1>
+                    <p class="weather-current__updated-time-text">
+                        Updated as of
+                        <span class="weather-current__updated-time">
+                            18:00 PM
+                        </span>
+                    </p>
+                </header>
+                <section class="weather-current__top">
+                    <figure class="weather-current__weather-icon-box">
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="sunny day" class="weather-current__weather-icon">
+                    </figure>
+                    <div class="weather-current__temperature-box">
+                        <p class="weather__temperature  weather-current__temperature">
+                            85
+                        </p>
+                        <div class="weather-current__btns-box">
+                            <button data-temp="fahrenheit" class="weather-current__temperature-changer-btn weather-current__fahrenheit-btn active">F</button>
+                            <button data-temp="celcius" class="weather-current__temperature-changer-btn weather-current__celcius-btn">C</button>
+                        </div>
+                    </div>
+                     
+                        
+                        <div class="weather-current__weather-condition-box">
+                            <p class="weather-current__weather-condition">
+                                Mostly sunny
+                            </p>
+                            <!-- <span class="weather-current__weather-expectancy">
+                                Light rain is expected during the day. The high will be 87°.
+                            </span> -->
+                        </div>
+                     
+                </section>
+                <section class="weather-current__bottom">
+                    <div class="weather-current__box weather-current__feels-like-box">
+                        <div class="weather-current__box-left weather-current__feels-like-left">
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                        </div>
+                        <div class="weather-current__box-right weather-current__feels-like-right">
+                            <p class="weather-current__box-text weather-current__feels-like-text">
+                                FEELS LIKE
+                            </p>
+                            <span class="weather-current__box-output weather__temperature weather__feels-like-temperature">
+                                85
+                                 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="weather-current__box">
+                        <div class="weather-current__box-left">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="weather-current__box-right">
+                            <p class="weather-current__box-text">
+                                WIND
+                            </p>
+                            <span class="weather__wind-speed weather-current__box-output">
+                                 11mph
+                                 
+                            </span>
+                            <i class="fas fa-location-arrow weather__wind-direction"></i>
+                        </div>
+                    </div>
+                    <div class="weather-current__box">
+                        <div class="weather-current__box-left">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="weather-current__box-right">
+                            <p class="weather-current__box-text">
+                                HUMIDITY
+                            </p>
+                            <span class="weather__humidity weather-current__box-output">
+                                44%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="weather-current__box">
+                        <div class="weather-current__box-left">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="weather-current__box-right">
+                            <p class="weather-current__box-text">
+                                PRESSURE
+                            </p>
+                            <span class="weather__pressure weather-current__box-output">
+                                29.92in
+                            </span>
+                        </div>
+                    </div>
+                    <div class="weather-current__box">
+                        <div class="weather-current__box-left">
+                            <i class="fab fa-envira"></i>
+                        </div>
+                        <div class="weather-current__box-right">
+                            <p class="weather-current__box-text">
+                                DEW POINT
+                            </p>
+                            <span class="weather__dew-point weather-current__box-output">
+                                61
+                                <sup>o</sup>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="weather-8days-forecast weather__weather-8days-forecast">
+                <header class="weather-8days-forecast__header">
+                    <h2 class="weather-8days-forecast__title">
+                        8 DAYS FORECAST
+                    </h2>
+                </header>
+                <div class="weather-8days-forecast__container">
+                    
+                </div>
+            </section>
+             
+            <section class="weather-hourly">
+                <header class="weather-hourly__header">
+                    <h2 class="weather-hourly__title">
+                        24 HOURS FORECAST
+                    </h2>
+                </header>       
+                    <div class="weather-hourly__container">
+                    
+                    </div>
+            </section>
+        </section>
+    </main>
+    <div class="progress">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+    </div>
+    <section class="error-message-box">
+        <header class="error-message-box__header">
+            <h2 class="error-message-box__title">
+                404 NOT FOUND
+            </h2>
+            <p class="error-message-box__text">
+                Please type valid CITY name
+            </p>
+        </header>
+    </section>
+     
+    <script src="index.min.js" defer></script>
+</body>
+</html>
