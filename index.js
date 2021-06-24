@@ -280,7 +280,7 @@ const getCityCoorDinates = (e)=>{
     console.log(e.target)
     const city = form.querySelector("input").value;
     const xml = new XMLHttpRequest();
-    xml.open("GET", `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherAPIKey}`);
+    xml.open("GET", `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherAPIKey}`);
 
     xml.onload = function(){
         if(this.status === 200){            
